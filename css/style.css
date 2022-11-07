@@ -1,2 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Work+Sans:wght@400;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Work+Sans:wght@400;600;700&display=swap');
+html {
+  --light: #fff;
+  --black: #000;
+  --orange: #ff6c01;
+  --orange-btn: #ef781a;
+  --green: #69a042;
+  --green-btn: #00d008;
+  --gray: #999999;
+  --back: #ececec;
+  font-size: 10px;
+}
+body {
+  max-width: 1800px;
+  margin: 0 auto;
+  background-color: #999999;
+}
+
+/* #region common */
+
+.button {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.6rem;
+  background: var(--orange);
+  box-shadow: 0 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.25);
+}
+
+/* #region Header */
+
+.header {
+  background: var(--light);
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.2rem solid #c4c4c4;
+  box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.25);
+  padding: 0.6% 16.1%;
+}
+.logo {
+  display: inline-block;
+  margin-right: 5.2%;
+}
+.logo > img {
+  width: 7.7rem;
+}
+.header-input {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--gray);
+  width: 45.2rem;
+  height: 4.3rem;
+  background: url("../img/icon-map.svg") 2rem center no-repeat;
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-right: 30%;
+  padding-left: 6.5rem;
+}
+.header-btn {
+  background: var(--orange-btn);
+  padding: 1.2rem 3rem;
+  margin-right: 1.2%;
+}
+.header-btn-green {
+  background: var(--green-btn);
+  padding: 1.2rem 3rem;
+}
+.header-bottom {
+  background-color: var(--light);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  padding: 5.2rem 0 3.4rem 29rem;
+}
+.chapter {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  color: #000000;
+  margin: 0;
+}
