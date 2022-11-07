@@ -172,11 +172,11 @@ footer {
 }
 /* #endregion */
 
-
 /* #region Main */
 
-.main {  
+.main {
   display: grid;
+  grid-auto-rows: 0fr;
   grid-template-columns: repeat(3, 19.4%);
   grid-template-rows: repeat(3, 0fr 1fr 1fr);
   row-gap: 2.6rem;
@@ -195,6 +195,10 @@ footer {
 .main > h2:nth-of-type(3) {
   grid-column: 1/4;
   grid-row: 7;
+}
+.main > h2:nth-of-type(4) {
+  grid-column: 1/4;
+  grid-row: 10;
 }
 .title {
   margin: 1.5rem 0 -1rem 0;
@@ -251,5 +255,13 @@ footer {
 .price {
   display: flex;
   justify-content: space-between;
+}
+.about {
+  height: 26.3rem;
+  align-self: center;
+  grid-column: 1/4;
+  grid-row: 11;
+  background: var(--light);
+  border-radius: 12px;
 }
 /* #endregion */
