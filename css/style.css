@@ -30,6 +30,27 @@ body {
   background: var(--orange);
   box-shadow: 0 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.25);
 }
+.font-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: var(--black);
+}
+.font-card-high {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: var(--black);
+}
+.font-card {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #a2a2a2;
+}
 
 /* #region Header */
 
@@ -93,6 +114,7 @@ body {
 
 /* #region Main */
 
+/* list */
 .store {
   display: grid;
   grid-template-columns: 14.6% 37.4% 45%;
@@ -123,4 +145,46 @@ body {
   background: #b8b8b8;
   border-radius: 1rem;
   padding: 0.5rem 2.6rem;
+}
+
+/* offer */
+.offer {
+  grid-column: 2/4;
+  margin-top: 4.3rem;
+}
+.title {
+  margin: 0 0 1.6rem 0;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 27.5% 27.5% 27.5%;
+  grid-template-rows: 50% 50%;
+}
+.card {
+  width: 230px;
+  height: 275px;
+  background: var(--light);
+  box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.card-foto {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.card > div:first-child {
+  height: 50%;
+}
+.card > div:last-child {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1.6rem 2rem;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+.heart {
 }
