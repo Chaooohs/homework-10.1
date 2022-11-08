@@ -278,6 +278,37 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+.a {
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0.6rem 0rem;
+}
+.b {
+  display: none;
+  transition: all 1s linear;
+}
+.price > img {
+  transition: all 1s linear;
+}
+.card:hover .price .a {
+  display: none;
+}
+.card:hover .price .b {
+  display: inline;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--light);
+  border: none;
+  border-radius: 0.6rem;
+  background: var(--orange);
+  box-shadow: 0 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.25);
+  padding: 0.6rem 2rem;
+}
+.card:hover .price > img {
+  background: url("../img/heart-green.svg") 0 0 no-repeat;
+}
 .about {
   grid-column: 1/4;
   grid-row: 11;
@@ -358,7 +389,7 @@ footer {
   grid-row: 2;
   grid-column: 1/4;
   color: var(--black);
-  padding-left: 4%;
+  padding-left: 5%;
 }
 .amount {
   width: 25%;
@@ -375,6 +406,7 @@ footer {
   grid-column: 1;
 }
 .what > ul {
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
