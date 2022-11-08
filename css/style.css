@@ -270,7 +270,6 @@ footer {
   justify-content: space-between;
 }
 .about {
-  height: 26.3rem;
   grid-column: 1/4;
   grid-row: 11;
   border-radius: 12px;
