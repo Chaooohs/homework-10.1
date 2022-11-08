@@ -12,9 +12,7 @@ html {
   font-size: 10px;
 }
 body {
-  max-width: 1800px;
   height: 100%;
-  margin: 0 auto;
   background-color: #999999;
 }
 
@@ -54,6 +52,8 @@ body {
 }
 
 .store {
+  max-width: 1800px;
+  margin: 0 auto;
   background: var(--back);
 }
 .store {
@@ -61,7 +61,7 @@ body {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 1.7fr 1fr;
-  grid-template-rows: 0fr 0fr 4fr 1fr;
+  grid-template-rows: 0fr 0fr 4fr 7rem;
   grid-template-areas:
     "header header"
     "nav aside"
@@ -144,18 +144,19 @@ footer {
 /* #endregion */
 
 /* #region Nav */
-.list {
+.nav {
   justify-self: center;
   margin-top: 2.2rem;
 }
-.list > ul {
+.nav > ul {
   display: flex;
   justify-content: space-evenly;
+  grid-column: 2;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.list a {
+.nav a {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 1.8rem;
@@ -164,7 +165,7 @@ footer {
   color: #7b7b7b;
   padding: 0.5rem 2.6rem;
 }
-.list a:hover {
+.nav a:hover {
   color: #343434;
   background: #b8b8b8;
   border-radius: 1rem;
@@ -181,8 +182,9 @@ footer {
   grid-template-rows: repeat(3, 0fr 1fr 1fr);
   row-gap: 2.6rem;
   column-gap: 5rem;
+  justify-self: flex-end;
   justify-content: center;
-  margin-top: 2.2rem;
+  margin: 2.2rem 0;
 }
 .main > h2:nth-of-type(1) {
   grid-column: 1/4;
@@ -266,7 +268,6 @@ footer {
 }
 /* #endregion */
 
-
 /* #region Aside */
 
 .order {
@@ -279,4 +280,11 @@ footer {
 }
 
 /* #endregion */
+
+
+/* #region Footer */
+
+.footer {
+  background: var(--black);
+}
 
