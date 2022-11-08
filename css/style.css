@@ -400,6 +400,25 @@ footer {
 /* #region Footer */
 
 .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background: var(--black);
+}
+.footer > ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer > ul > li > a {
+  text-decoration: none;
+  color: var(--light);
+}
+.footer > ul > li:nth-child(2) {
+  margin: 0 5.8rem;
+}
+.icon > a:nth-child(2) {
+  margin: 0 2.8rem;
 }
 /* #endregion */
