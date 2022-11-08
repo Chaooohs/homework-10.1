@@ -4,9 +4,9 @@ html {
   --light: #fff;
   --black: #000;
   --orange: #ff6c01;
-  --orange-btn: #ef781a;
+  --orange-hd-btn: #ef781a;
+  --green-hd-btn: #00d008;
   --green: #69a042;
-  --green-btn: #00d008;
   --gray: #999999;
   --back: #ececec;
   font-size: 10px;
@@ -50,13 +50,27 @@ body {
   line-height: 1.2rem;
   color: #a2a2a2;
 }
+.fotn-aside {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: var(--gray);
+}
+.font-about-high {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--black);
+}
 
-.store {
+.page {
   max-width: 1800px;
   margin: 0 auto;
   background: var(--back);
 }
-.store {
+.page {
   height: 100%;
   display: grid;
   grid-gap: 2rem;
@@ -106,10 +120,6 @@ footer {
 }
 .header-input {
   box-sizing: border-box;
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2rem;
   color: var(--gray);
   width: 45.2rem;
   height: 4.3rem;
@@ -121,12 +131,12 @@ footer {
   padding-left: 6.5rem;
 }
 .header-btn {
-  background: var(--orange-btn);
+  background: var(--orange-hd-btn);
   padding: 1.2rem 3rem;
   margin-right: 1.2%;
 }
 .header-btn-green {
-  background: var(--green-btn);
+  background: var(--green-hd-btn);
   padding: 1.2rem 3rem;
 }
 .header-bottom {
@@ -281,10 +291,9 @@ footer {
 
 /* #endregion */
 
-
 /* #region Footer */
 
 .footer {
   background: var(--black);
 }
-
+/* #endregion */
