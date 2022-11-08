@@ -76,6 +76,7 @@ body {
 /* #region Page */
 
 .page {
+  position: relative;
   max-width: 1800px;
   margin: 0 auto;
   background: var(--back);
@@ -422,3 +423,9 @@ footer {
   margin: 0 2.8rem;
 }
 /* #endregion */
+
+.arrow {
+  position: absolute;
+  left: 112rem;
+  bottom: 11.1rem;
+}
