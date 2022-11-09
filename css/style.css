@@ -254,51 +254,75 @@ footer {
   grid-column: 3;
 }
 .card {
+  position: relative;
   height: 27.5rem;
   background: var(--light);
   box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
-.card-foto {
+/* .card-foto {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   border-radius: 0.5rem 0.5rem 0 0;
-}
+} */
 .card > div:first-child {
   height: 50%;
 }
+.card > div:first-child > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
 .card > div:last-child {
   height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 0fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.5rem;
   box-sizing: border-box;
   padding: 1.6rem 2rem;
 }
 .price {
   display: flex;
-  justify-content: space-between;
+  grid-row: 3;
+  grid-column: 1/3;
+}
+.card > div > span:nth-child(1) {
+  grid-row: 1;
+  grid-column: 1/3;
+}
+.card > div > span:nth-child(2) {
+  grid-row: 2;
+  grid-column: 1/3;
 }
 .a {
-  font-size: 12px;
-  line-height: 15px;
-  padding: 0.6rem 0rem;
+  padding: 3px 0px;
 }
 .b {
+  position: absolute;
+  left: 1rem;
   display: none;
   transition: all 1s linear;
 }
 .price > img {
+  position: absolute;
+  right: 1.6rem;
+  bottom: 2rem;
   transition: all 1s linear;
 }
-.card:hover .price .a {
+.card:hover .a {
   display: none;
 }
-.card:hover .price .b {
+.card:hover .b {
   display: inline;
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   color: var(--light);
   border: none;
   border-radius: 0.6rem;
