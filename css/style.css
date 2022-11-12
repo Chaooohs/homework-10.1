@@ -84,7 +84,8 @@ body {
 .page {
   height: 100%;
   display: grid;
-  grid-gap: 2rem;
+  row-gap: 2rem;
+  column-gap: 5rem;
   grid-template-columns: 1.7fr 1fr;
   grid-template-rows: 0fr 0fr 4fr 7rem;
   grid-template-areas:
@@ -111,6 +112,7 @@ footer {
 /* #endregion */
 
 /* #region Header */
+
 .header {
   position: sticky;
   top: 0;
@@ -165,6 +167,7 @@ footer {
 /* #endregion */
 
 /* #region Nav */
+
 .nav {
   justify-self: center;
   margin-top: 2.2rem;
@@ -199,13 +202,13 @@ footer {
 .main {
   display: grid;
   grid-auto-rows: 0fr;
-  grid-template-columns: repeat(3, 25%);
+  grid-template-columns: repeat(3, 0.9fr);
   grid-template-rows: repeat(3, 0fr 1fr 1fr);
   row-gap: 2.6rem;
   column-gap: 5rem;
   justify-self: flex-end;
-  justify-content: center;
   margin: 2.2rem 0;
+  padding-left: 1.5rem;
 }
 .main > h2:nth-of-type(1) {
   grid-column: 1/4;
