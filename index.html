@@ -16,11 +16,37 @@
 
     <header class="header">
       <div class="header-top">
-        <a class="logo" href="./index.html"><img src="./img/logo.svg" alt="logo"></a>
-        <input class="header-input font-about-high" type="text" placeholder="Вкажіть Ваше місто...">
+        <div class="box">
+          <div class="header-top-left">
+            <a class="logo" href="./index.html"><img src="./img/logo.svg" alt="logo"></a>
+            <input class="header-input font-about-high" type="text" placeholder="Вкажіть Ваше місто...">
+          </div>
+          <div class="header-top-right">
+            <button class="header-btn button" type="button"> Увійти </button>
+            <button class="header-btn-green button" type="button"> Кошик </button>
+          </div>
+        </div>
 
-        <button class="header-btn button" type="button"> Увійти </button>
-        <button class="header-btn-green button" type="button"> Кошик </button>
+        <style>
+          .box {
+            width: 127.6rem;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0 3rem;
+          }
+          .header-top-left {
+            display: flex;
+            align-items: center;
+            column-gap: 9.5rem;
+          }
+          .header-top-right {
+            display: flex;
+            align-items: center;
+            column-gap: 2.2rem;
+          }
+        </style>
 
       </div>
       <div class="header-bottom">
