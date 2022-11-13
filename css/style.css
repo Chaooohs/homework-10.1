@@ -462,6 +462,9 @@ footer {
   grid-column: 2;
   column-gap: 1.6rem;
 }
+.amount img {
+  width: 2.5rem;
+}
 .bigmak {
   justify-self: center;
   align-self: flex-start;
