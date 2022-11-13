@@ -128,6 +128,11 @@ footer {
   box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.25);
   padding: 1.4rem 0 0.9rem;
 }
+.header-top-left {
+  display: flex;
+  align-items: center;
+  column-gap: 9.5rem;
+}
 .logo {
   display: inline-block;
 }
@@ -144,6 +149,11 @@ footer {
   border-radius: 0.5rem;
   outline: none;
   padding-left: 6.5rem;
+}
+.header-top-right {
+  display: flex;
+  align-items: center;
+  column-gap: 2.2rem;
 }
 .header-btn {
   background: var(--orange-hd-btn);
