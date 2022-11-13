@@ -1,7 +1,7 @@
 
-@media (max-width: 1276px) {
+@media (max-width: 1279px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
 } 
 
@@ -9,6 +9,8 @@
   html {
     font-size: 8px;
   }
+
+  /* pages */
 
   .page {
     grid-template-columns: 1.7fr 1fr;
@@ -19,8 +21,31 @@
     "aside aside"
     "footer footer";
   }
+  .box-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 4fr 0fr;
+    grid-template-areas:
+    "nav"
+    "main"
+    "aside"
+    ;
+  }
+
+  /* header */
+
+  .header-top-left {
+    column-gap: 2.5rem;
+  }
+
+  /* main */
+
   .main {
     justify-self: center;
     padding: 0;
+  }
+  .aside {
+    justify-self: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
   }
 }
