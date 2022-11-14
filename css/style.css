@@ -17,10 +17,6 @@ body {
 
 /* #region common */
 
-.buffer {
-  box-sizing: border-box;
-  padding: 0 3rem;
-}
 .button {
   font-family: "Montserrat";
   font-weight: 700;
@@ -91,20 +87,22 @@ body {
   position: relative;
   background: var(--back);
 }
+.buffer {
+  box-sizing: border-box;
+  padding: 0 3rem;
+}
+.container {
+  width: 129.9rem;
+  margin: 0 auto;
+}
 .header-container {
-  max-width: 129.9rem;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  margin: 0 auto;
   padding: 0 2.7rem 0 2.6rem;
 }
 
 .grid-container {
-  position: relative;
-  width: 129.9rem;
-  margin: 0 auto;
-  /* height: 100%; */
   display: grid;
   column-gap: 3.1%;
   grid-template-columns: 2fr 1fr;
@@ -125,13 +123,11 @@ div {
 }
 
 .footer-container {
-  width: 129.9rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0 5.15rem;
-  margin: 0 auto;
 }
 
 
