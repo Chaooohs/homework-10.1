@@ -97,4 +97,19 @@
   .card {
     margin: 0 auto;
   }
+
+  /* footer */
+  
+  .footer {
+    height: 100%;
+    padding: 2rem 0;
+  }
+  .box-footer {
+    width: 100%;
+  }
+  .footer  ul {
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: space-evenly;
+  }
 }
