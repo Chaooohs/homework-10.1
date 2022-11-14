@@ -60,3 +60,41 @@
     column-gap: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 6px;
+  }
+
+  
+  .header-input {
+    display: none;
+  }
+  
+  /* main */
+
+  .nav {
+    position: absolute;
+    top: -100vh;
+  }
+  .main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 6rem;
+    margin: 0;
+  }
+  .title {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 27px;
+  }
+  .card-container {
+    flex: 0 0 50%;
+  }
+  .card {
+    margin: 0 auto;
+  }
+}
