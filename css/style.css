@@ -127,7 +127,7 @@ div {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0 5.15rem;
+  padding: 0 2.6rem;
 }
 
 
@@ -241,8 +241,8 @@ div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  justify-self: flex-end;
-  /* margin: 4.2rem 0 0; */
+  justify-self: center;
+  row-gap: 2.6rem;
 }
 .main > h2:nth-of-type(1) {
   grid-column: 1/4;
