@@ -66,11 +66,6 @@
     font-size: 6px;
   }
 
-  
-  .header-input {
-    display: none;
-  }
-
   /* header */
 
   .header {
@@ -80,6 +75,9 @@
     position: sticky;
     top: 0;
     z-index: 10;
+  }
+  .header-input {
+    display: none;
   }
   
   /* main */
@@ -97,10 +95,10 @@
     margin: 0;
   }
   .title {
-    font-size: 20px;
+    font-size: 3.3rem;
     width: 100%;
     text-align: center;
-    margin-top: 27px;
+    margin-top: 4.5rem;
   }
   .card-container {
     flex: 0 0 50%;
