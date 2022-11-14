@@ -5,7 +5,7 @@
   }
 
   .nav {
-    right: 12.2rem;
+    /* right: 12.2rem; */
   }
 } 
 
@@ -25,7 +25,7 @@
     "aside aside"
     "footer footer";
   }
-  .box-main {
+  .grid-container {
     max-width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 0fr;
@@ -60,11 +60,8 @@
   /* main */
 
   .main {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 8rem;
+    max-width: 100%;
+    row-gap: 6rem;
     margin: 0;
   }
   .main > h2:last-of-type {
@@ -117,7 +114,7 @@
 
 @media (max-width: 768px) {
   html {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   /* main */

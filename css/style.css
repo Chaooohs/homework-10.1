@@ -95,22 +95,23 @@ body {
   margin: 0 auto;
   padding: 0 3rem;
 }
-.box-main {
-  max-width: 127.6rem;
+.grid {
+  width: 100%;
   box-sizing: border-box;
   padding: 0 3rem;
-  margin: 4.2rem auto 4.1rem;
+  margin: 4.2rem 0 4.1rem;
 }
 
 
-.box-main {
+.grid-container {
   position: relative;
-  height: 100%;
+  max-width: 127.6rem;
+  margin: 0 auto;
+  /* height: 100%; */
   display: grid;
-  row-gap: 2rem;
-  column-gap: 1%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0fr 4fr;
+  column-gap: 3.1%;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 4fr;
   grid-template-areas:
     "nav aside"
     "main aside";
@@ -209,8 +210,7 @@ footer {
 /* #region Nav */
 
 .nav {
-  position: absolute;
-  right: 13.2rem;
+  padding-left: 0.9rem;
 }
 .nav > ul {
   display: flex;
@@ -239,14 +239,19 @@ footer {
 /* #region Main */
 
 .main {
-  width: 79rem;   
-  display: grid;
+  max-width: 79rem;   
+  /* display: grid;
   grid-auto-rows: 0fr;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 0fr 1fr 1fr);
   row-gap: 2.6rem;
+  justify-self: flex-end; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   justify-self: flex-end;
-  margin: 2.2rem 0 0;
+  /* margin: 4.2rem 0 0; */
 }
 .main > h2:nth-of-type(1) {
   grid-column: 1/4;
@@ -265,7 +270,8 @@ footer {
   grid-row: 10;
 }
 .title {
-  margin: 1.5rem 0 -1rem 0;
+  width: 100%;
+  margin: 4.1rem 0 0 0;
 }
 .main > .card:nth-child(1) {
   grid-row: 1;
@@ -294,6 +300,9 @@ footer {
 .main > .card:nth-child(7) {
   grid-row: 3;
   grid-column: 3;
+}
+.card-container {
+  flex: 0 0 33%;
 }
 .card {
   position: relative;
@@ -435,7 +444,6 @@ footer {
   border-radius: 5px;
   box-sizing: border-box;
   padding: 0 2.3rem;
-  margin-top: 2.2rem;
 }
 .aside {
   display: grid;
