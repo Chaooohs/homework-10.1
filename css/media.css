@@ -59,7 +59,7 @@
 
   /* main */
 
-  .main {
+  .grid {
     max-width: 100%;
     row-gap: 6rem;
     margin: 0;
@@ -119,7 +119,7 @@
 
   /* main */
 
-  .main {
+  .grid {
     justify-content: space-evenly;
     row-gap: 6rem;
   }

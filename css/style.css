@@ -99,10 +99,6 @@ body {
   margin: 0 auto;
   padding: 0 2.7rem 0 2.6rem;
 }
-.grid {
-  margin: 4.2rem 0 4.1rem;
-}
-
 
 .grid-container {
   position: relative;
@@ -115,22 +111,17 @@ body {
   grid-template-rows: auto 4fr;
   grid-template-areas:
     "nav aside"
-    "main aside";
+    "div aside";
 }
-header {
-  grid-area: header;
-}
+
 nav {
   grid-area: nav;
 }
 aside {
   grid-area: aside;
 }
-main {
-  grid-area: main;
-}
-footer {
-  grid-area: footer;
+div {
+  grid-area: div;
 }
 
 .footer-container {
@@ -213,8 +204,6 @@ footer {
 
 /* #region Nav */
 
-.nav {
-}
 .nav > ul {
   display: flex;
   grid-column: 2;
@@ -242,6 +231,9 @@ footer {
 /* #region Main */
 
 .main {
+  margin: 4.2rem 0 4.1rem;
+}
+.grid {
   max-width: 79rem;   
   /* display: grid;
   grid-auto-rows: 0fr;
