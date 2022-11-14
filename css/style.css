@@ -17,6 +17,10 @@ body {
 
 /* #region common */
 
+.buffer {
+  box-sizing: border-box;
+  padding: 0 3rem;
+}
 .button {
   font-family: "Montserrat";
   font-weight: 700;
@@ -87,25 +91,22 @@ body {
   position: relative;
   background: var(--back);
 }
-.box-header {
-  max-width: 127.6rem;
+.header-container {
+  max-width: 129.9rem;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 2.7rem 0 2.6rem;
 }
 .grid {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 3rem;
   margin: 4.2rem 0 4.1rem;
 }
 
 
 .grid-container {
   position: relative;
-  max-width: 127.6rem;
+  width: 129.9rem;
   margin: 0 auto;
   /* height: 100%; */
   display: grid;
@@ -132,13 +133,13 @@ footer {
   grid-area: footer;
 }
 
-.box-footer {
-  width: 127.6rem;
+.footer-container {
+  width: 129.9rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0 3rem;
+  padding: 0 5.15rem;
   margin: 0 auto;
 }
 
@@ -158,6 +159,8 @@ footer {
   box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.25);
   padding: 1.4rem 0 0.9rem;
   background: var(--light);
+  
+  box-sizing: border-box;
 }
 .header-top-left {
   display: flex;
@@ -195,7 +198,8 @@ footer {
 }
 .header-bottom {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-  padding: 5.2rem 0 3.4rem 0;
+  box-sizing: border-box;
+  padding: 5.2rem 0 3.4rem;
 }
 .chapter {
   font-family: "Montserrat";
@@ -210,7 +214,6 @@ footer {
 /* #region Nav */
 
 .nav {
-  padding-left: 0.9rem;
 }
 .nav > ul {
   display: flex;
@@ -450,6 +453,7 @@ footer {
   grid-template-columns: 1.5fr 1fr 1fr;
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
+  justify-self: flex-end;
 }
 .aside-title {
   grid-row: 1;
@@ -512,9 +516,6 @@ footer {
 
 .footer {
   height: 7rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background: var(--black);
 }
 .footer  ul {
