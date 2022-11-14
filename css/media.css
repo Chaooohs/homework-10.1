@@ -3,10 +3,6 @@
   html {
     font-size: 7px;
   }
-
-  .nav {
-    /* right: 12.2rem; */
-  }
 } 
 
 @media (max-width: 992px) {
