@@ -9,6 +9,9 @@ html {
   --green: #69a042;
   --gray: #999999;
   --back: #ececec;
+
+  --wrapper-cont-width: 127.3rem;
+  --buffer-cont-padding: 3rem;
   font-size: 10px;
 }
 body {
@@ -79,20 +82,19 @@ body {
 }
 /* #endregion */
 
-/* #region Pages */
+/* #region Containers */
 
-.page {
+.container {
   max-width: 1800px;
   margin: 0 auto;
-  position: relative;
   background: var(--back);
 }
-.buffer {
+.buffer-container {
   box-sizing: border-box;
-  padding: 0 3rem;
+  padding: 0 var(--buffer-cont-padding);
 }
-.container {
-  max-width: 127.3rem;
+.wrapper-container {
+  max-width: var(--wrapper-cont-widthwidth);
   /* width: 129.9rem; */
   margin: 0 auto;
 }
@@ -121,6 +123,10 @@ aside {
 }
 div {
   grid-area: div;
+}
+
+.card-container {
+  flex: 0 0 33%;
 }
 
 .footer-container {
@@ -244,9 +250,6 @@ div {
   margin: 4.1rem 0 0 0;
 }
 
-.card-container {
-  flex: 0 0 33%;
-}
 .card {
   position: relative;
   width: 23rem;
