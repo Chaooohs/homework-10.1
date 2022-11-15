@@ -92,7 +92,8 @@ body {
   padding: 0 3rem;
 }
 .container {
-  width: 129.9rem;
+  max-width: 127.3rem;
+  /* width: 129.9rem; */
   margin: 0 auto;
 }
 .header-container {
@@ -104,7 +105,7 @@ body {
 
 .grid-container {
   display: grid;
-  column-gap: 3.1%;
+  column-gap: 1.1%;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 4fr;
   grid-template-areas:
@@ -504,6 +505,8 @@ div {
 
 .footer {
   height: 7rem;
+  box-sizing: border-box;
+  padding: 1.3rem 0 1.7rem 0;
   background: var(--black);
 }
 .footer  ul {

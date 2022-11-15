@@ -1,5 +1,17 @@
 
+@media (max-width: 1440px) {
+  html {
+    font-size: 9px;
+  }
+} 
+
 @media (max-width: 1279px) {
+  html {
+    font-size: 8px;
+  }
+} 
+
+@media (max-width: 1110px) {
   html {
     font-size: 7px;
   }
@@ -12,21 +24,12 @@
 
   /* pages */
 
-  .page {
-    grid-template-columns: 1.7fr 1fr;
-    grid-template-areas:
-    "header header"
-    "nav nav"
-    "main main"
-    "aside aside"
-    "footer footer";
-  }
   .grid-container {
     max-width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 0fr;
     grid-template-areas:
-    "main"
+    "div"
     "aside"
     ;
   }
@@ -60,11 +63,11 @@
     row-gap: 6rem;
     margin: 0;
   }
-  .main > h2:last-of-type {
+  .grid > h2:last-of-type {
     text-align: left;
   }
   .title {
-    font-size: 4.3rem;
+    font-size: 3.3rem;
     width: 100%;
     text-align: center;
     margin-top: 9.5rem;
@@ -80,7 +83,7 @@
 
   .aside {
     justify-self: center;
-    margin-top: 6rem;
+    margin-top: 10rem;
     margin-bottom: 2rem;
   }
   .amount {
@@ -119,12 +122,12 @@
     justify-content: space-evenly;
     row-gap: 6rem;
   }
+  .grid > h2:last-of-type {
+    text-align: center;
+  }
   .title {
     font-size: 3.3rem;
     margin-top: 4.5rem;
-  }
-  .main > h2:last-of-type {
-    text-align: center;
   }
   .card-container {
     flex: 0 0 50%;
