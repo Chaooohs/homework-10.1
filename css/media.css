@@ -61,6 +61,8 @@
   }
   .header-mob {
     display: block;
+    position: sticky;
+    top: 0;
   }
   .header-desk {
     display: none;
