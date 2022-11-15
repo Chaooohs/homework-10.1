@@ -63,15 +63,10 @@
     display: block;
     position: sticky;
     top: 0;
+    z-index: 10;
   }
   .header-desk {
     display: none;
-  }
-  .header-top {
-    display: block;
-    position: sticky;
-    top: 0;
-    z-index: 10;
   }
   .header-input {
     position: absolute;
