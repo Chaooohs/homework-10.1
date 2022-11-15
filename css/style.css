@@ -232,67 +232,18 @@ div {
 }
 .grid {
   max-width: 79rem;   
-  /* display: grid;
-  grid-auto-rows: 0fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 0fr 1fr 1fr);
-  row-gap: 2.6rem;
-  justify-self: flex-end; */
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   justify-self: center;
   row-gap: 2.6rem;
 }
-.main > h2:nth-of-type(1) {
-  grid-column: 1/4;
-  grid-row: 1;
-}
-.main > h2:nth-of-type(2) {
-  grid-column: 1/4;
-  grid-row: 4;
-}
-.main > h2:nth-of-type(3) {
-  grid-column: 1/4;
-  grid-row: 7;
-}
-.main > h2:nth-of-type(4) {
-  grid-column: 1/4;
-  grid-row: 10;
-}
+
 .title {
   width: 100%;
   margin: 4.1rem 0 0 0;
 }
-.main > .card:nth-child(1) {
-  grid-row: 1;
-  grid-column: 1;
-}
-.main > .card:nth-child(2) {
-  grid-row: 2;
-  grid-column: 1;
-}
-.main > .card:nth-child(3) {
-  grid-row: 2;
-  grid-column: 2;
-}
-.main > .card:nth-child(4) {
-  grid-row: 2;
-  grid-column: 3;
-}
-.main > .card:nth-child(5) {
-  grid-row: 3;
-  grid-column: 1;
-}
-.main > .card:nth-child(6) {
-  grid-row: 3;
-  grid-column: 2;
-}
-.main > .card:nth-child(7) {
-  grid-row: 3;
-  grid-column: 3;
-}
+
 .card-container {
   flex: 0 0 33%;
 }
