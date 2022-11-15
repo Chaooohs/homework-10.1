@@ -13,7 +13,7 @@ html {
   --wrapper-c-width: 127.3rem;
   --buffer-c-padding: 3rem;
 
-  --btn-translate: 2px;
+  --btn-translate: 1px;
   --btn-transition: all 0.1s linear;
 
   font-size: 10px;
@@ -21,6 +21,9 @@ html {
 }
 body {
   background-color: #999999;
+}
+img {
+  width: 100%;
 }
 
 /* #region Buttons */
@@ -55,6 +58,11 @@ body {
 }
 
 .btn-card {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+.btn-card {
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.5rem;
@@ -69,21 +77,51 @@ body {
 .btn-card:active {
   transform: translateY(var(--btn-translate));
 }
+
+.btn-heart {
+  width: 2.4rem;
+  height: 2rem;
+  cursor: pointer;
+  border: none;
+  background: url('../img/heart.svg') right/100% no-repeat;
+}
+.btn-heart:focus {
+  background: url('../img/heart-green.svg') right/100% no-repeat;
+}
+
+.aside-btn {
+  width: 35rem;
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  grid-row: 4;
+  grid-column: 1/4;
+  box-sizing: border-box;
+}
+
+.arrow-btn {
+  position: absolute;
+  left: 112rem;
+  bottom: 11.1rem;
+}
+
 /* #endregion */
 
 /* #region Fonts */
 
-.font-title {
+h2 {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 2.9rem;
   color: var(--black);
 }
-.font-card-high {
+h3, .font-footer {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.2rem;
   color: var(--black);
+  margin: 0;
 }
 .font-card {
   font-weight: 500;
@@ -109,6 +147,7 @@ body {
   line-height: 1.5rem;
   color: #979797;
 }
+
 /* #endregion */
 
 /* #region Containers */
@@ -287,64 +326,29 @@ div {
   box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
-.card > div:first-child {
-  height: 50%;
-}
-.card > div:first-child > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 0.5rem 0.5rem 0 0;
-}
-.card > div:last-child {
-  height: 50%;
-  display: grid;
-  grid-template-rows: 0fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 1.5rem;
-  box-sizing: border-box;
-  padding: 1.6rem 2rem;
-}
-.card > div:last-child > span:nth-child(1) {
-  grid-row: 1;
-  grid-column: 1/3;
-}
-.card > div:last-child > span:nth-child(2) {
-  grid-row: 2;
-  grid-column: 1/3;
-}
-.card > div:last-child > div {
-  display: flex;
-  grid-row: 3;
-  grid-column: 1/3;
-}
-.card > div:last-child > div > span {
-  padding: 3px 0px;
-}
-.card > div:last-child > div > button:first-of-type {
-  display: none;
-  position: absolute;
-  left: 1rem;
-}
-.card:hover > div:last-child > div > span {
-  display: none;
-}
-.card:hover > div:last-child > div > button:first-of-type {
+.card:hover .btn-card {
   display: block;
 }
-.card > div:last-child > div > button:last-of-type {
-  position: absolute;
-  right: 1.6rem;
-  bottom: 2rem;
-  transition: all 1s linear;
-  border: none;
-  background: transparent;
+.card-image {
+  width: 23rem;
+  height: 14rem;
 }
-.card > div:last-child > div > button:last-of-type > img:hover {
-  background: url("../img/heart-green.svg") 0 0 no-repeat;
+.card-title {
+  margin: 1.5rem 0 0 2.1rem;
 }
+.card-descript {
+  margin: 0.9rem 0 0 2.1rem;
+}
+.card-price {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.6rem 2.4rem 0 2.1rem;
+}
+
 .about {
+  width: 79rem;
   height: 26rem;
   grid-column: 1/4;
   grid-row: 11;
@@ -457,16 +461,6 @@ div {
   color: var(--black);
   padding-right: 2rem;
 }
-.aside-btn {
-  width: 84%;
-  display: flex;
-  justify-self: center;
-  justify-content: space-between;
-  font-size: 1.8rem;
-  grid-row: 4;
-  grid-column: 1/4;
-  box-sizing: border-box;
-}
 
 /* #endregion */
 
@@ -497,9 +491,3 @@ div {
   width: 4rem;
 }
 /* #endregion */
-
-.arrow {
-  position: absolute;
-  left: 112rem;
-  bottom: 11.1rem;
-}
