@@ -13,7 +13,7 @@ html {
   --wrapper-cont-width: 127.3rem;
   --buffer-cont-padding: 3rem;
 
-  --btn-translate: 5px;
+  --btn-translate: 2px;
   --btn-transition: all 0.1s linear;
 
   font-size: 10px;
