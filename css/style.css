@@ -12,20 +12,24 @@ html {
 
   --wrapper-cont-width: 127.3rem;
   --buffer-cont-padding: 3rem;
+
+  --btn-translate: 5px;
+  --btn-transition: all 0.1s linear;
+
   font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 body {
   background-color: #999999;
 }
 
-/* #region common */
+/* #region Buttons */
 
 .button {
-  font-family: "Montserrat";
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2rem;
-  color: #ffffff;
+  color: var(--light);
   border: none;
   border-radius: 0.6rem;
   background: var(--orange);
@@ -33,48 +37,73 @@ body {
   padding: 1.2rem 3rem;
   cursor: pointer;
 }
+.button {
+  transition: var(--btn-transition);
+}
+.button:active {
+  transform: translateY(var(--btn-translate));
+}
+
 .btn-circle {
   border: none;
   background: transparent;
   cursor: pointer;
+  transition: var(--btn-transition);
 }
+.btn-circle:active {
+  transform: translateY(var(--btn-translate));
+}
+
+.btn-card {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--light);
+  border: none;
+  border-radius: 0.6rem;
+  background: var(--orange);
+  box-shadow: 0 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.25);
+  padding: 0.6rem 2rem;
+  transition: var(--btn-transition);
+}
+.btn-card:active {
+  transform: translateY(var(--btn-translate));
+}
+/* #endregion */
+
+/* #region Fonts */
+
 .font-title {
-  font-family: "Montserrat";
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 2.9rem;
   color: var(--black);
 }
 .font-card-high {
-  font-family: "Montserrat";
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.2rem;
   color: var(--black);
 }
 .font-card {
-  font-family: "Montserrat";
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.2rem;
   color: #a2a2a2;
 }
 .font-about {
-  font-family: "Montserrat";
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.7rem;
   color: var(--gray);
 }
 .font-about-high {
-  font-family: "Montserrat";
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2rem;
   color: var(--black);
 }
 .font-bigmakmenu {
-  font-family: "Montserrat";
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.5rem;
@@ -297,24 +326,12 @@ div {
   display: none;
   position: absolute;
   left: 1rem;
-  transition: all 1s linear;
 }
 .card:hover > div:last-child > div > span {
   display: none;
 }
 .card:hover > div:last-child > div > button:first-of-type {
-  display: inline;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  color: var(--light);
-  border: none;
-  border-radius: 0.6rem;
-  background: var(--orange);
-  box-shadow: 0 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.25);
-  padding: 0.6rem 2rem;
-  cursor: pointer;
+  display: block;
 }
 .card > div:last-child > div > button:last-of-type {
   position: absolute;
@@ -323,8 +340,6 @@ div {
   transition: all 1s linear;
   border: none;
   background: transparent;
-  cursor: pointer;
-  transition: all 2s linear;
 }
 .card > div:last-child > div > button:last-of-type > img:hover {
   background: url("../img/heart-green.svg") 0 0 no-repeat;
