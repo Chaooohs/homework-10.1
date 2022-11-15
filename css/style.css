@@ -10,8 +10,8 @@ html {
   --gray: #999999;
   --back: #ececec;
 
-  --wrapper-cont-width: 127.3rem;
-  --buffer-cont-padding: 3rem;
+  --wrapper-c-width: 127.3rem;
+  --buffer-c-padding: 3rem;
 
   --btn-translate: 2px;
   --btn-transition: all 0.1s linear;
@@ -120,10 +120,10 @@ body {
 }
 .buffer-container {
   box-sizing: border-box;
-  padding: 0 var(--buffer-cont-padding);
+  padding: 0 var(--buffer-c-padding);
 }
 .wrapper-container {
-  max-width: var(--wrapper-cont-widthwidth);
+  max-width: var(--wrapper-c-width);
   /* width: 129.9rem; */
   margin: 0 auto;
 }
