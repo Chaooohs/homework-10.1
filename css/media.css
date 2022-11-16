@@ -1,11 +1,12 @@
-
-
 @media (min-width: 1801px) {
   html {
     font-size: 10px;
   }
 
   .header-mob {
+    display: none;
+  }
+  #input {
     display: none;
   }
 }
@@ -16,6 +17,9 @@
   }
 
   .header-mob {
+    display: none;
+  }
+  #input {
     display: none;
   }
 }
@@ -68,14 +72,22 @@
   .header-desk {
     display: none;
   }
-  .header-input {
-   width: 100%;
-   font-size: 2rem;
-   background-size: 2.5rem;
-  }
 
   /* nav */
 
+  #input {
+    display: block;
+  }
+  #input {
+    width: 100%;
+    font-size: 2rem;
+    background-size: 2.5rem;
+    padding: 3rem 0 3rem 6.5rem;
+  }
+  .nav {
+    position: absolute;
+    top: -100vh;
+  }
   .nav.active .nav-list {
     position: fixed;
     top: 0;
@@ -92,7 +104,6 @@
   .nav a {
     font-size: 2rem;
   }
-  
 
   /* main */
 
