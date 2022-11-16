@@ -75,10 +75,20 @@
 
   /* nav */
 
-  .nav {
-    position: absolute;
-    top: -100vh;
+  .nav.active .nav-list {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    z-index: 50;
+    background: var(--light);
+    border: 1px solid var(--gray);
+    flex-direction: column;
+    padding: 4rem 3rem;
+    row-gap: 7rem;
   }
+  
 
   /* main */
 
