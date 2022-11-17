@@ -7,6 +7,9 @@ $(document).ready(function() {
     
     $('#input').show();
     $('#nav').prepend($('#input'));
+    
+    
+    $('#logo').prependTo('#nav');
     $('#about').clone().appendTo('#nav');
     $('#contact').clone().appendTo('#nav');
     $('#partner').clone().appendTo('#nav');
