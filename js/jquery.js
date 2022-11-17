@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
   $('.mob-button').click(function(event){
-    $('mob-button, .mob-input, .mob-nav, .nav').toggleClass('active');
+    $('.mob-button, .mob-logo, .mob-input, .mob-nav, .nav').toggleClass('active');
     $('body').toggleClass('lock');
     
     // $('.mob-input').show();
@@ -10,8 +10,8 @@ $(document).ready(function() {
     
     $('.nav').appendTo('.mob-nav');
     
-    $('#about').clone().appendTo('.nav-list');
+  /*   $('#about').clone().appendTo('.nav-list');
     $('#contact').clone().appendTo('.nav-list');
-    $('#partner').clone().appendTo('.nav-list');
+    $('#partner').clone().appendTo('.nav-list'); */
   });
 });

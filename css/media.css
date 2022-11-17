@@ -40,6 +40,9 @@
   html {
     font-size: 8px;
   }
+  body.lock {
+    overflow: hidden;
+  }
 
   /* pages */
 
@@ -74,17 +77,22 @@
     align-items: center;
     column-gap: 6.5rem;
   }
+  .mob-logo {
+    z-index: 1000;
+  }
   .mob-logo > img {
     width: 7.7rem;
   }
   .mob-button {
+    z-index: 1000;
     border: none;
     background: transparent;
     cursor: pointer;
   }
-  .mob-button.active {
-    position: fixed;
+  .mob-button > img {
+    width: 4rem;
   }
+  
   .nav {
     display: none;
   }
@@ -96,14 +104,14 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    /* z-index: 9; */
+    z-index: 9;
     top: 0;
     left: 0;
     width: 36%;
     height: 100%;
     background: var(--light);
     border-right: 1px solid var(--gray);
-    padding: 7rem 3rem;
+    padding: 20rem 3rem;
     row-gap: 7rem;
   }
   .mob-input.active {
@@ -197,13 +205,13 @@
 
   /* header */
 
-  .header-top-left {
+  .mob-left {
     column-gap: 3.5rem;
   }
 
   /* nav */
 
-  .nav.active .nav-list {
+  .mob-nav.active {
     width: 60%;
   }
 
@@ -234,7 +242,7 @@
   .header-container {
     padding: 0 1rem 0 1rem;
   }
-  .header-top-left {
+  .mob-left {
     column-gap: 1.5rem;
   }
   .header-top-right {
