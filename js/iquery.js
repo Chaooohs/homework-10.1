@@ -2,4 +2,6 @@
 
 $( "#nav" ).prepend(  $( "#input" ) );
 
-// $( "#input" ).clone().prependTo( "#nav" );
+$( "#about" ).clone().appendTo( "#nav" );
+$( "#contact" ).clone().appendTo( "#nav" );
+$( "#partner" ).clone().appendTo( "#nav" );
