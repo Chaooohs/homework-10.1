@@ -6,9 +6,6 @@
   .header-mob {
     display: none;
   }
-  #input {
-    display: none;
-  }
 }
 
 @media (max-width: 1800px) {
@@ -19,10 +16,8 @@
   .header-mob {
     display: none;
   }
-  #input {
-    display: none;
-  }
 }
+
 
 @media (max-width: 1440px) {
   html {
@@ -79,7 +74,7 @@
   /* nav */
 
   #input {
-    display: block;
+    display: none;
   }
   #input {
     width: 100%;
