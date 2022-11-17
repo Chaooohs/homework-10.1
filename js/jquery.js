@@ -1,7 +1,5 @@
 
 
-
-
 $(document).ready(function() {
   $('.burger-btn').click(function(event){
     $('.burger-btn,.nav').toggleClass('active');
