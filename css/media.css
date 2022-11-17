@@ -107,10 +107,6 @@
   .nav a {
     font-size: 2rem;
   }
-  #about {
-    padding-top: 7rem;
-    border-top: 1px solid var(--gray);
-  }
 
   /* main */
 
