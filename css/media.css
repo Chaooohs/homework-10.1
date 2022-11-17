@@ -72,6 +72,9 @@
   .header-desk {
     display: none;
   }
+  .header-top-left {
+    column-gap: 6.5rem;
+  }
 
   /* nav */
 
@@ -92,7 +95,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 60%;
+    width: 36%;
     height: 100%;
     z-index: 50;
     background: var(--light);
@@ -165,6 +168,18 @@
     font-size: 6px;
   }
 
+  /* header */
+
+  .header-top-left {
+    column-gap: 3.5rem;
+  }
+
+  /* nav */
+
+  .nav.active .nav-list {
+    width: 60%;
+  }
+  
   /* main */
 
   .grid {
@@ -184,10 +199,19 @@
 }
 
 @media (max-width: 374px) {
-  html {
-    --buffer-cont-padding: 1rem;
-  }
 
+
+  /* header */
+
+  .buffer-container {
+    padding: 0 1rem;
+  }
+  .header-container {
+    padding: 0 1rem 0 1rem;
+  }
+  .header-top-left {
+    column-gap: 1.5rem;
+  }
   .header-top-right {
     column-gap: 0.7rem;
   }
