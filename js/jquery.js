@@ -1,17 +1,17 @@
 
 
 $(document).ready(function() {
-  $('.burger-btn').click(function(event){
-    $('.burger-btn,.nav').toggleClass('active');
+  $('.mob-button').click(function(event){
+    $('mob-button, .mob-input, .mob-nav, .nav').toggleClass('active');
     $('body').toggleClass('lock');
     
-    $('#input').show();
-    $('#nav').prepend($('#input'));
+    // $('.mob-input').show();
+    // $('.nav').show();
     
+    $('.nav').appendTo('.mob-nav');
     
-    $('#logo').prependTo('#nav');
-    $('#about').clone().appendTo('#nav');
-    $('#contact').clone().appendTo('#nav');
-    $('#partner').clone().appendTo('#nav');
+    $('#about').clone().appendTo('.nav-list');
+    $('#contact').clone().appendTo('.nav-list');
+    $('#partner').clone().appendTo('.nav-list');
   });
 });

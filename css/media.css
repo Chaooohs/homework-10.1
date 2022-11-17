@@ -18,7 +18,6 @@
   }
 }
 
-
 @media (max-width: 1440px) {
   html {
     font-size: 9px;
@@ -58,46 +57,79 @@
   .header {
     position: static;
   }
+  .header-desk {
+    display: none;
+  }
   .header-mob {
     display: block;
     position: sticky;
     top: 0;
     z-index: 10;
   }
-  .header-desk {
-    display: none;
-  }
-  .header-top-left {
+
+  /* header mobile */
+
+  .mob-left {
+    display: flex;
+    align-items: center;
     column-gap: 6.5rem;
   }
-
-  /* nav */
-
-  #input {
-    display: none;
+  .mob-logo > img {
+    width: 7.7rem;
   }
-  #input {
-    width: 100%;
-    font-size: 2rem;
-    background-size: 2.5rem;
-    padding: 3rem 0 3rem 6.5rem;
+  .mob-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .mob-button.active {
+    position: fixed;
   }
   .nav {
-    position: absolute;
-    top: -100vh;
+    display: none;
   }
-  .nav.active .nav-list {
+  .mob-input {
+    display: none;
+  }
+
+  .mob-nav.active  {
+    display: flex;
+    flex-direction: column;
     position: fixed;
+    /* z-index: 9; */
     top: 0;
     left: 0;
     width: 36%;
     height: 100%;
-    z-index: 50;
     background: var(--light);
     border-right: 1px solid var(--gray);
-    flex-direction: column;
     padding: 7rem 3rem;
     row-gap: 7rem;
+  }
+  .mob-input.active {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    color: var(--gray);
+    background: url("../img/icon-map.svg") 2rem center no-repeat;
+    background-size: 2.5rem;
+    border: 0.1rem solid #000000;
+    border-radius: 0.5rem;
+    outline: none;
+    box-sizing: border-box;
+    padding: 2rem 0 2rem 6.5rem;
+  }
+  .nav.active {
+    display: block;
+  }
+  .nav.active .nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7rem;
+  }
+  .nav.active .nav-list > li:nth-child(7) {
+    border-top: 1px solid var(--gray);
+    padding-top: 5rem;
   }
   .nav a {
     font-size: 2rem;
@@ -194,8 +226,6 @@
 }
 
 @media (max-width: 374px) {
-
-
   /* header */
 
   .buffer-container {
