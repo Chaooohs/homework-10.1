@@ -10,8 +10,8 @@ $(document).ready(function() {
     
     $('.nav').appendTo('.mob-nav');
     
-  /*   $('#about').clone().appendTo('.nav-list');
-    $('#contact').clone().appendTo('.nav-list');
-    $('#partner').clone().appendTo('.nav-list'); */
+    // $('.from').afterTo('.nav-list');
+    // $('#contact').clone().appendTo('.nav-list');
+    // $('#partner').clone().appendTo('.nav-list');
   });
 });
