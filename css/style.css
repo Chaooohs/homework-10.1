@@ -186,6 +186,7 @@ h3, .font-footer {
 .grid-container {
   display: grid;
   column-gap: 1.1%;
+  row-gap: 4rem;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 4fr;
   grid-template-areas:
