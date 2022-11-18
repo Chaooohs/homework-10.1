@@ -254,9 +254,8 @@
 
   .arrow-btn {
     grid-row: aside;
-    justify-self: flex-end;
+    justify-self: flex-start;
     align-self: flex-start;
-    margin: 0 auto;
   }
 }
 
@@ -274,5 +273,11 @@
   }
   .header-top-right {
     column-gap: 0.7rem;
+  }
+
+  /* arrow */
+
+  .arrow-btn {
+    justify-self: center;
   }
 }

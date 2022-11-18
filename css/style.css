@@ -175,6 +175,8 @@ h3, .font-footer {
   max-width: var(--wrapper-c-width);
   /* width: 129.9rem; */
   margin: 0 auto;
+  
+  scroll-behavior: smooth;
 }
 .header-container {
   display: flex;
