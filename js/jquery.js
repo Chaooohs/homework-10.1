@@ -3,6 +3,7 @@
 $(document).ready(function() {
   $('.mob-button').click(function(event){
     $('.mob-button, .mob-logo, .mob-input, .mob-nav, .nav').toggleClass('active');
+    
     $('body').toggleClass('lock');
 
     if ($('.mob-btn-img').attr('src') == 'img/button/close.svg')
