@@ -122,6 +122,7 @@ h2 {
   font-size: 2.4rem;
   line-height: 2.9rem;
   color: var(--black);
+  margin: 0;
 }
 h3, .font-footer {
   font-weight: 500;
