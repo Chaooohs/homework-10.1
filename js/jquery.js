@@ -19,11 +19,11 @@ $(document).ready(function () {
 });
 
 
-jQuery(document).ready(function () {
-  jQuery("a.scrollto").click(function () {
+$(document).ready(function () {
+  $("a.scrollto").click(function () {
     elementClick = jQuery(this).attr("href")
     destination = jQuery(elementClick).offset().top - 200;
-    jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 500);
+    $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 500);
     return false;
   });
 });
