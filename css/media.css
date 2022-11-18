@@ -254,8 +254,8 @@
 
   .arrow-btn {
     grid-row: aside;
-    justify-self: flex-start;
-    align-self: flex-start;
+    justify-self: flex-end;
+    align-self: flex-end;
   }
 }
 
@@ -279,5 +279,6 @@
 
   .arrow-btn {
     justify-self: center;
+    align-self: flex-start;
   }
 }
