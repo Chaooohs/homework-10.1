@@ -195,6 +195,13 @@
     column-gap: 1rem;
   }
 
+  /* arrow */
+
+  .arrow-btn {
+    grid-row: aside;
+    justify-self: flex-end;
+  }
+
   /* footer */
 
   .footer {

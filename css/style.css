@@ -101,9 +101,11 @@ img {
 }
 
 .arrow-btn {
-  position: absolute;
-  left: 112rem;
-  bottom: 11.1rem;
+  position: sticky;
+  align-self: flex-end;
+  width: 7rem;
+  bottom: 12rem;
+  grid-column: aside;
 }
 
 /* #endregion */
