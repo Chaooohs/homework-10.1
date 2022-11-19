@@ -240,7 +240,7 @@
   .header-mob {
     grid-template-columns: 0.5fr 14fr 0.5fr;
   }
-  .header-container {
+  .header-container-top {
     padding: 0%;
   }
   .mob-left {
@@ -276,7 +276,7 @@
   .buffer-container {
     padding: 0 1rem;
   }
-  .header-container {
+  .header-container-top {
     padding: 0 1rem 0 1rem;
   }
   .mob-left {
