@@ -188,6 +188,10 @@
   .card {
     margin: 0 auto;
   }
+  .card-about {
+    width: 94%;
+    justify-self: center;
+  }
 
   /* aside */
 
@@ -265,6 +269,9 @@
     grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
   }
+  .card-about {
+    width: 75%;
+  }
   
   /* arrow */
 
@@ -298,9 +305,9 @@
   .arrow-btn {
     grid-row: footer;
     /* justify-self: center; */
-    align-self: flex-start;
+    align-self: center;
     right: 4%;
-    bottom: 20rem;
+    bottom: 25rem;
   }
 }
 
