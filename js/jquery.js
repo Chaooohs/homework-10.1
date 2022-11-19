@@ -22,7 +22,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("a.scrollto").click(function () {
     elementClick = jQuery(this).attr("href")
-    destination = jQuery(elementClick).offset().top - 200;
+    destination = jQuery(elementClick).offset().top - 270;
     $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 500);
     return false;
   });
