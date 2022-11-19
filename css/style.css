@@ -184,19 +184,8 @@ h3,
   /* width: 129.9rem; */
   margin: 0 auto;
 }
-.header-container {
-  width: var(--wrapper-c-width);
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding-right: 2.7rem;
-}
-.header-container {
-  grid-column: 2;
-  grid-row: 2;
-}
+
 .card-container {
-  flex: 0 0 33%;
 }
 
 .footer-container {
@@ -231,6 +220,16 @@ h3,
   border-bottom: 0.2rem solid #c4c4c4;
   box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.25);
   background: var(--light);
+}
+.header-container {
+  grid-column: 2;
+  grid-row: 2;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-right: 2.7rem;
 }
 .header-top-left {
   display: flex;
@@ -306,7 +305,7 @@ h3,
 
 .content {
   display: grid;
-  grid-template-rows: [nav] 1fr [action] 1fr [burger] 1fr [chicken] 1fr [about] 1fr;
+  grid-template-rows: [nav] 0fr [action] 1fr [burger] 1fr [chicken] 1fr [about] 0fr;
 }
 .content {
   grid-row: body;
@@ -317,7 +316,9 @@ h3,
 }
 .cards {
  display: grid;
- grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+ grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+ row-gap: 2.6rem;
+ column-gap: 4rem;
 }
 .card-action {
   grid-row: action;
@@ -331,23 +332,21 @@ h3,
 
 .title {
   width: 100%;
-  margin: 4.1rem 0 0 0;
+  margin: 4.1rem 0 1.6rem 0;
 }
 
 .card {
   position: relative;
-  width: 23rem;
-  height: 27.5rem;
   background: var(--light);
   box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+  padding-bottom: 1rem;
 }
 .card:hover .btn-card {
   display: block;
 }
 .card-image {
-  width: 23rem;
-  height: 14rem;
+
 }
 .card-title {
   margin: 1.5rem 0 0 2.1rem;
