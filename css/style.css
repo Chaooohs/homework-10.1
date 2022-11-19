@@ -90,7 +90,7 @@ img {
 }
 
 .aside-btn {
-  width: 35rem;
+  width: 100%;
   display: flex;
   justify-self: center;
   justify-content: space-between;
@@ -170,7 +170,7 @@ h3,
 }
 .main {
   display: grid;
-  grid-column-gap: 2rem;
+  /* grid-column-gap: 2rem; */
   grid-row-gap: 1rem;
   grid-template-rows: [header] 23.1rem [body] auto [footer] 7rem;
   grid-template-columns: [left] 2fr [content] 7fr [aside] 3fr [right] 2fr;
@@ -313,12 +313,13 @@ h3,
 }
 .content {
   padding: 4.2rem 0 4.1rem;
+  margin-right: 3.7%;
 }
 .cards {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
- row-gap: 2.6rem;
- column-gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  row-gap: 2.6rem;
+  column-gap: 3%;
 }
 .card-action {
   grid-row: action;
@@ -346,7 +347,6 @@ h3,
   display: block;
 }
 .card-image {
-
 }
 .card-title {
   margin: 1.5rem 0 0 2.1rem;
@@ -418,26 +418,24 @@ h3,
 
 /* #region Aside */
 
-.aside {
-  width: 40rem;
-  height: 30rem;
+.card-aside {
   background: var(--light);
   box-shadow: 2px 7px 7px 3px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   box-sizing: border-box;
   padding: 0 2.3rem;
-  padding-top: 4.2rem;
+  margin-top: 4.2rem;
 }
 .aside {
   grid-row: body;
   grid-column: aside;
 }
-.aside {
+.card-aside {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
-  justify-self: flex-end;
+  justify-self: stretch;
 }
 .aside-title {
   grid-row: 1;
@@ -451,13 +449,13 @@ h3,
   grid-row: 2;
   grid-column: 2/4;
   color: var(--black);
-  padding-right: 2rem;
 }
 .amount {
+  width: 60%;
   display: flex;
+  justify-content: space-between;
   grid-row: 2;
   grid-column: 2;
-  column-gap: 1.6rem;
 }
 .amount img {
   width: 2.5rem;
@@ -481,7 +479,6 @@ h3,
   grid-row: 3;
   grid-column: 1/4;
   color: var(--black);
-  padding-right: 2rem;
 }
 
 /* #endregion */
