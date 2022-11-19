@@ -292,7 +292,7 @@ h3,
 
 .content {
   display: grid;
-  grid-template-rows: [nav] 0fr [action] 1fr [burger] 1fr [chicken] 1fr [about] 0fr;
+  grid-template-rows: [nav] auto [action] 1fr [burger] 1fr [chicken] 1fr [about] auto;
 }
 .content {
   grid-row: body;
