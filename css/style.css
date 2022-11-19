@@ -52,6 +52,7 @@ img {
   background: transparent;
   cursor: pointer;
   transition: var(--btn-transition);
+  padding: 0;
 }
 .btn-circle:active {
   transform: translateY(var(--btn-translate));
@@ -432,7 +433,7 @@ h3,
   padding-left: 5%;
 }
 .amount {
-  width: 9rem;
+  width: 10rem;
   display: flex;
   justify-content: space-between;
   grid-row: 2;

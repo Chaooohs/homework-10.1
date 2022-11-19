@@ -203,9 +203,6 @@
   .card-aside {
     height: 25rem;
   }
-  .amount {
-    column-gap: 3px;
-  }
 
   /* arrow */
 
@@ -270,16 +267,17 @@
     justify-content: space-evenly;
   }
   .card-about {
-    width: 75%;
+    width: 100%;
   }
   
   /* arrow */
 
   .arrow-btn {
-    grid-row: aside;
-    justify-self: flex-end;
-    align-self: flex-end;
-    right: 3%;
+    grid-row: footer;
+    /* justify-self: center; */
+    align-self: center;
+    right: 4%;
+    bottom: 17rem;
   }
 }
 
@@ -298,16 +296,6 @@
   }
   .header-top-right {
     column-gap: 0.7rem;
-  }
-
-  /* arrow */
-
-  .arrow-btn {
-    grid-row: footer;
-    /* justify-self: center; */
-    align-self: center;
-    right: 4%;
-    bottom: 25rem;
   }
 }
 
