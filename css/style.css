@@ -172,10 +172,6 @@ h3,
   /* width: 129.9rem; */
   margin: 0 auto;
 }
-
-.card-container {
-}
-
 .footer-container {
   display: flex;
   align-items: center;
@@ -213,6 +209,7 @@ h3,
   grid-row: 2;
 }
 .header-container {
+  width: 122rem;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -299,6 +296,7 @@ h3,
   grid-column: content;
 }
 .content {
+  width: 79rem;
   padding: 4.2rem 0 4.1rem;
   margin-right: 3.7%;
 }
@@ -411,6 +409,7 @@ h3,
   padding-top: 4.2rem;
 }
 .card-aside {
+  width: 40rem;
   background: var(--light);
   box-shadow: 2px 7px 7px 3px rgba(0, 0, 0, 0.25);
   border-radius: 5px;

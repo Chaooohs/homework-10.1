@@ -25,15 +25,9 @@
   }
 }
 
-@media (max-width: 1279px) {
-  html {
-    font-size: 8px;
-  }
-}
-
 @media (max-width: 1110px) {
   html {
-    font-size: 7px;
+    font-size: 8px;
   }
 }
 
