@@ -41,16 +41,16 @@
 
   .main {
     grid-template-rows: [header] auto [body] auto [aside] auto [footer] auto;
-    grid-template-columns: [left] 1fr [content] 7fr [right] 1fr;
+    grid-template-columns: [left] 1fr [content] 10fr [right] 1fr;
   }
   .aside {
     grid-row: aside;
     grid-column: content;
   }
   .content {
+    width: 100%;
     margin: 0;
   }
-
 
   /* header */
 
@@ -77,6 +77,9 @@
   }
   .header-bottom {
     grid-template-columns: 1fr 10fr 1fr;
+  }
+  .header-container-top, .header-container-bottom {
+    width: 100%;
   }
 
   /** header mobile */
@@ -166,6 +169,9 @@
 
   /* content */
 
+  .content {
+    justify-self: center;
+  }
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 100%;
@@ -275,9 +281,6 @@
 
   .buffer-container {
     padding: 0 1rem;
-  }
-  .header-container-top {
-    padding: 0 1rem 0 1rem;
   }
   .mob-left {
     column-gap: 1.5rem;
