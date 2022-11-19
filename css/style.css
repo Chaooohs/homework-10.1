@@ -17,7 +17,7 @@ html {
   --btn-transition: all 0.1s linear;
 
   font-size: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   background-color: #999999;
@@ -83,10 +83,10 @@ img {
   height: 2rem;
   cursor: pointer;
   border: none;
-  background: url('../img/button/heart.svg') right/100% no-repeat;
+  background: url("../img/button/heart.svg") right/100% no-repeat;
 }
 .btn-heart:focus {
-  background: url('../img/button/heart-green.svg') right/100% no-repeat;
+  background: url("../img/button/heart-green.svg") right/100% no-repeat;
 }
 
 .aside-btn {
@@ -126,7 +126,8 @@ h2 {
   color: var(--black);
   margin: 0;
 }
-h3, .font-footer {
+h3,
+.font-footer {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.2rem;
@@ -162,10 +163,17 @@ h3, .font-footer {
 
 /* #region Containers */
 
-.container {
+.main {
   max-width: 1800px;
-  margin: 0 auto;
   background: var(--back);
+  margin: 0 auto;
+}
+.main {
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  grid-template-rows: [header] 23.1rem [body] auto [footer] 7rem;
+  grid-template-columns: [left] 2fr [content] 7fr [aside] 3fr [right] 2fr;
 }
 .buffer-container {
   box-sizing: border-box;
@@ -183,7 +191,7 @@ h3, .font-footer {
   padding: 0 2.7rem 0 2.6rem;
 }
 
-.grid-container {
+/* .grid-container {
   display: grid;
   column-gap: 1.1%;
   row-gap: 4rem;
@@ -192,7 +200,7 @@ h3, .font-footer {
   grid-template-areas:
     "nav aside"
     "div aside";
-}
+} */
 
 nav {
   grid-area: nav;
@@ -226,12 +234,20 @@ div {
   z-index: 9;
   background: var(--light);
 }
+.header {
+  grid-row: header;
+  grid-column: left / 5;
+}
+.header-de {
+  display: grid;
+  grid-template-columns: [left] 2fr [header-body] 10fr [right] 2fr;
+}
 .header-top {
   border-bottom: 0.2rem solid #c4c4c4;
   box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.25);
   padding: 1.4rem 0 0.9rem;
   background: var(--light);
-  
+
   box-sizing: border-box;
 }
 .header-top-left {
@@ -299,13 +315,17 @@ div {
 }
 /* #endregion */
 
-/* #region Main */
+/* #region Content */
 
-.main {
+.content {
   margin: 4.2rem 0 4.1rem;
 }
+.content {
+  grid-row: body;
+  grid-column: content;
+}
 .grid {
-  max-width: 79rem;   
+  max-width: 79rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -410,6 +430,10 @@ div {
   padding: 0 2.3rem;
 }
 .aside {
+  grid-row: body;
+  grid-column: aside;
+}
+.aside {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   grid-template-rows: repeat(4, 1fr);
@@ -471,14 +495,18 @@ div {
   padding: 1.3rem 0 1.7rem 0;
   background: var(--black);
 }
-.footer  ul {
+.footer {
+  grid-row: footer;
+  grid-column: left / 5;
+}
+.footer ul {
   display: flex;
   list-style-type: none;
   column-gap: 5.8rem;
   margin: 0;
   padding: 0;
 }
-.footer  ul > li > a {
+.footer ul > li > a {
   text-decoration: none;
   color: var(--light);
 }
