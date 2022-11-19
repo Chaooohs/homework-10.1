@@ -55,7 +55,6 @@
   }
   .content {
     margin: 0;
-    padding: 0 3rem;
   }
 
 
@@ -239,7 +238,7 @@
     grid-template-columns: [left] auto [content] 10fr [right] auto;
   }
   .content {
-    padding: 0 1.5rem;
+    padding: 0 3rem;
   }
 
   /* header */
@@ -262,11 +261,6 @@
   .cards {
     grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
-    row-gap: 6rem;
-  }
-  .title {
-    font-size: 3.3rem;
-    margin-top: 4.5rem;
   }
   
   /* arrow */
@@ -279,6 +273,10 @@
 }
 
 @media (max-width: 374px) {
+
+  .content {
+    padding: 0 1.5rem;
+  }
   /* header */
 
   .buffer-container {
