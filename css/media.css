@@ -207,7 +207,10 @@
 
   .arrow-btn {
     grid-row: aside;
+    grid-column: content;
     justify-self: flex-end;
+    bottom: 43rem;
+    margin: 0;
   }
 
   /* footer */
@@ -269,6 +272,7 @@
     grid-row: aside;
     justify-self: flex-end;
     align-self: flex-end;
+    right: 3%;
   }
 }
 
@@ -292,8 +296,11 @@
   /* arrow */
 
   .arrow-btn {
-    justify-self: center;
+    grid-row: footer;
+    /* justify-self: center; */
     align-self: flex-start;
+    right: 4%;
+    bottom: 20rem;
   }
 }
 
