@@ -162,7 +162,7 @@
 
   /* main */
 
-  .grid {
+  .cards {
     max-width: 100%;
     row-gap: 6rem;
     margin: 0;
@@ -235,7 +235,7 @@
 
   /* main */
 
-  .grid {
+  .cards {
     justify-content: space-evenly;
     row-gap: 6rem;
   }

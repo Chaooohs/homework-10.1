@@ -10,7 +10,7 @@ html {
   --gray: #999999;
   --back: #ececec;
 
-  --wrapper-c-width: 127.3rem;
+  --wrapper-c-width: 124.7rem;
   --buffer-c-padding: 3rem;
 
   --btn-translate: 1px;
@@ -185,7 +185,7 @@ h3,
   margin: 0 auto;
 }
 .header-container {
-  max-width: var(--wrapper-c-width);
+  width: var(--wrapper-c-width);
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -195,28 +195,6 @@ h3,
   grid-column: 2;
   grid-row: 2;
 }
-
-/* .grid-container {
-  display: grid;
-  column-gap: 1.1%;
-  row-gap: 4rem;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto 4fr;
-  grid-template-areas:
-    "nav aside"
-    "div aside";
-} */
-
-nav {
-  grid-area: nav;
-}
-aside {
-  grid-area: aside;
-}
-div {
-  grid-area: div;
-}
-
 .card-container {
   flex: 0 0 33%;
 }
@@ -327,19 +305,28 @@ div {
 /* #region Content */
 
 .content {
-  margin: 4.2rem 0 4.1rem;
+  display: grid;
+  grid-template-rows: [nav] 1fr [action] 1fr [burger] 1fr [chicken] 1fr [about] 1fr;
 }
 .content {
   grid-row: body;
   grid-column: content;
 }
-.grid {
-  max-width: 79rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  justify-self: center;
-  row-gap: 2.6rem;
+.content {
+  padding: 4.2rem 0 4.1rem;
+}
+.cards {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+}
+.card-action {
+  grid-row: action;
+}
+.card-burger {
+  grid-row: burger;
+}
+.card-chicken {
+  grid-row: chicken;
 }
 
 .title {
@@ -376,6 +363,9 @@ div {
   margin: 2.6rem 2.4rem 0 2.1rem;
 }
 
+.card-about {
+  grid-row: about;
+}
 .about {
   height: 26rem;
   grid-column: 1/4;
@@ -437,6 +427,7 @@ div {
   border-radius: 5px;
   box-sizing: border-box;
   padding: 0 2.3rem;
+  padding-top: 4.2rem;
 }
 .aside {
   grid-row: body;
