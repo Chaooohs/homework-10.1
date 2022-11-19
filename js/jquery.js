@@ -7,7 +7,7 @@ $(document).ready(function () {
     $('body').toggleClass('lock');
 
     if ($('.mob-btn-img').attr('src') == 'img/button/close.svg')
-      $('.mob-btn-img').attr('src', 'img/burger.svg').toggleClass('asd');
+      $('.mob-btn-img').attr('src', 'img/button/burger.svg').toggleClass('asd');
     else
       $('.mob-btn-img').attr('src', 'img/button/close.svg').toggleClass('asd');
 

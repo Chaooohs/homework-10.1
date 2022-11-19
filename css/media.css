@@ -136,7 +136,7 @@
     width: 100%;
     font-size: 2rem;
     color: var(--gray);
-    background: url("../img/icon-map.svg") 2rem center no-repeat;
+    background: url("../img/other/icon-map.svg") 2rem center no-repeat;
     background-size: 2.5rem;
     border: 0.1rem solid #000000;
     border-radius: 0.5rem;

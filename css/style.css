@@ -83,10 +83,10 @@ img {
   height: 2rem;
   cursor: pointer;
   border: none;
-  background: url('../img/heart.svg') right/100% no-repeat;
+  background: url('../img/button/heart.svg') right/100% no-repeat;
 }
 .btn-heart:focus {
-  background: url('../img/heart-green.svg') right/100% no-repeat;
+  background: url('../img/button/heart-green.svg') right/100% no-repeat;
 }
 
 .aside-btn {
@@ -216,7 +216,6 @@ div {
   padding: 0 2.6rem;
 }
 
-
 /* #endregion */
 
 /* #region Header */
@@ -248,7 +247,7 @@ div {
   color: var(--gray);
   width: 45.2rem;
   height: 4.3rem;
-  background: url("../img/icon-map.svg") 2rem center no-repeat;
+  background: url("../img/other/icon-map.svg") 2rem center no-repeat;
   border: 0.1rem solid #000000;
   border-radius: 0.5rem;
   outline: none;
