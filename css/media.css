@@ -237,8 +237,17 @@
 
   /* header */
 
+  .header-mob {
+    grid-template-columns: 0.5fr 14fr 0.5fr;
+  }
+  .header-container {
+    padding: 0%;
+  }
   .mob-left {
     column-gap: 3.5rem;
+  }
+  .header-bottom {
+    grid-template-columns: 0.5fr 14fr 0.5fr;
   }
 
   /* main */
