@@ -59,7 +59,6 @@
   }
 
 
-
   /* header */
 
   .header {
@@ -69,14 +68,22 @@
     display: none;
   }
   .header-mob {
-    display: block;
     position: sticky;
     top: 0;
     z-index: 50;
   }
+  .header-mob {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+  .header-mob {
+    height: 10.2rem;
+    border-bottom: 0.2rem solid #c4c4c4;
+    box-shadow: 0 0.2rem 0.1rem rgb(0 0 0 / 25%);
+    background: var(--light);
+  }
   .header-bottom {
-    grid-template-columns: auto 1fr auto;
-    padding: 0 3rem;
+    grid-template-columns: 1fr 10fr 1fr;
   }
 
   /** header mobile */
@@ -160,10 +167,6 @@
     flex-direction: column;
     row-gap: 7rem;
   }
-  .nav.active .nav-list > li:nth-child(7) {
-    border-top: 1px solid var(--gray);
-    padding-top: 5rem;
-  }
   .nav a {
     font-size: 2rem;
   }
@@ -175,18 +178,12 @@
     row-gap: 6rem;
     margin: 0;
   }
-  .grid > h2:last-of-type {
-    text-align: left;
-  }
   .title {
     font-size: 3.3rem;
     width: 100%;
     text-align: center;
     margin-top: 9.5rem;
     margin-bottom: 4.6rem;
-  }
-  .card-container {
-    flex: 0 0 33%;
   }
   .card {
     margin: 0 auto;
@@ -196,11 +193,14 @@
 
   .aside {
     justify-self: center;
-    margin-top: 10rem;
-    margin-bottom: 2rem;
+    padding: 0;
+    margin: 8rem 0;
+  }
+  .card-aside {
+    height: 25rem;
   }
   .amount {
-    column-gap: 1rem;
+    column-gap: 3px;
   }
 
   /* arrow */
@@ -213,8 +213,7 @@
   /* footer */
 
   .footer {
-    height: 100%;
-    padding: 5rem 0;
+    height: 35rem;
   }
   .footer-container {
     width: 100%;
