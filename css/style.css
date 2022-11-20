@@ -254,6 +254,9 @@ h3,
 
 /* #region Nav */
 
+.nav {
+  transform: translateX(-2.6rem);
+}
 .nav > ul {
   display: flex;
   grid-column: 2;
