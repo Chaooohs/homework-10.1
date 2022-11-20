@@ -132,8 +132,8 @@
     padding: 20rem 3rem;
     row-gap: 7rem;
   }
-  .mob-nav.active::before {
-    content: "";
+  .mob-nav.active::before {                        /*! подложка при открытом меню бургер*/
+    content: "";                                   /*! под нее уходит список при скроле*/   
     position: fixed;
     top: 0;
     left: 0;
