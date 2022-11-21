@@ -18,12 +18,12 @@ $(document).ready(function () {
 
   $(window).on('load resize',
     function () {
-      if ($(window).width() < 993) {
-        $('.nav').appendTo('.mob-nav');
+      if ($(window).width() > 993) {
+        $('.nav').appendTo('.content');
       }
-      else {
+      /* else {
         $('.nav').prependTo('.content');
-      }
+      } */
     });
 
 
