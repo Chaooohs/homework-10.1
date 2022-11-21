@@ -57,12 +57,12 @@ $(document).ready(function () {
     // $('.nav').show();
 
     //переносит меню nav последним в меню бургер
-    // $('.nav').appendTo('.mob-nav');  
+    $('.nav').appendTo('.mob-nav');  
 
 
   });
 
-  $(window).on('load resize',
+ /*  $(window).on('load resize',
       function () {
         if ($(window).width() < 1000) {
           $('.nav').appendTo('.mob-nav');
@@ -70,7 +70,7 @@ $(document).ready(function () {
         else {
           $('.nav').prependTo('.content');
         }
-      }); 
+      });  */
   
 
 })
