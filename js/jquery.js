@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-  
+
   //* скрол при переходе между # заглушками
 
   $("a.scrollto").click(function () {
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
   $(window).on('load resize',
     function () {
-      if ($(window).width() > 993) {
+      if ($(window).width() > 992) {
         $('.nav').appendTo('.content');
       }
       /* else {
