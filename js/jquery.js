@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-
+  
   //* скрол при переходе между # заглушками
 
   $("a.scrollto").click(function () {
@@ -14,19 +14,17 @@ $(document).ready(function () {
   });
 
 
-
   //* перенос блока nav при break-point 993px
 
   $(window).on('load resize',
     function () {
-      if ($(window).width() > 993) {
+      if ($(window).width() < 993) {
+        $('.nav').appendTo('.mob-nav');
+      }
+      else {
         $('.nav').prependTo('.content');
       }
-      /*  else {
-         $('.nav').prependTo('.content');
-       } */
     });
-
 
 
   //* открытие меню при нажатии на бургер
