@@ -57,7 +57,7 @@ $(document).ready(function () {
     // $('.nav').show();
 
     //переносит меню nav последним в меню бургер
-    // $('.nav').appendTo('.mob-nav');  
+    $('.nav').appendTo('.mob-nav');  
 
   });
 })
