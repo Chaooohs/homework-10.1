@@ -14,19 +14,6 @@ $(document).ready(function () {
   });
 
 
-  //* перенос блока nav при break-point 993px
-
-  $(window).on('load resize',
-    function () {
-      if ($(window).width() < 993) {
-        $('.nav').appendTo('.mob-nav');
-      }
-      else {
-        $('.nav').prependTo('.content');
-      }
-    });
-
-
   //* открытие меню при нажатии на бургер
 
   $('.mob-button').click(function (event) {
@@ -46,7 +33,20 @@ $(document).ready(function () {
     // $('.nav').show();
 
     //переносит меню nav последним в меню бургер
-    // $('.nav').appendTo('.mob-nav');
+    $('.nav').appendTo('.mob-nav');
 
   });
+
+
+    //* перенос блока nav при break-point 993px
+
+    $(window).on('load resize',
+    function () {
+      if ($(window).width() > 993) {
+        $('.nav').prependTo('.content');
+      }
+     /*  else {
+        $('.nav').prependTo('.content');
+      } */
+    });
 })
