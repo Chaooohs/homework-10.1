@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 // перенос блока nav при break-point 993px
 
-var $blocksContainer1 = $('.content'),
+/* var $blocksContainer1 = $('.content'),
   $blocksContainer2 = $('.mob-nav');
 
 function checkBlocks() {
@@ -33,7 +33,7 @@ function checkBlocks() {
 
 $(window).on('resize', function () {
   checkBlocks();
-});
+}); */
 
 
 
@@ -51,15 +51,28 @@ $(document).ready(function () {
       $('.mob-btn-img').attr('src', 'img/button/burger.svg').toggleClass('asd');
     else
       $('.mob-btn-img').attr('src', 'img/button/close.svg').toggleClass('asd');
-      
+
     // включает блок
     // $('.mob-input').show();
     // $('.nav').show();
 
     //переносит меню nav последним в меню бургер
-    $('.nav').appendTo('.mob-nav');  
+    // $('.nav').appendTo('.mob-nav');  
+
 
   });
+
+  $(window).on('load resize',
+      function () {
+        if ($(window).width() < 1000) {
+          $('.nav').appendTo('.mob-nav');
+        }
+        else {
+          $('.nav').prependTo('.content');
+        }
+      }); 
+  
+
 })
 
 
