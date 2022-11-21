@@ -51,6 +51,7 @@ $(document).ready(function () {
       $('.mob-btn-img').attr('src', 'img/button/burger.svg').toggleClass('asd');
     else
       $('.mob-btn-img').attr('src', 'img/button/close.svg').toggleClass('asd');
+      
     // включает блок
     // $('.mob-input').show();
     // $('.nav').show();
