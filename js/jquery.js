@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-  
+
   //* скрол при переходе между # заглушками
 
   $("a.scrollto").click(function () {
@@ -12,6 +12,21 @@ $(document).ready(function () {
     // время
     return false;
   });
+
+
+
+  //* перенос блока nav при break-point 993px
+
+  $(window).on('load resize',
+    function () {
+      if ($(window).width() > 993) {
+        $('.nav').prependTo('.content');
+      }
+      /*  else {
+         $('.nav').prependTo('.content');
+       } */
+    });
+
 
 
   //* открытие меню при нажатии на бургер
@@ -36,17 +51,4 @@ $(document).ready(function () {
     $('.nav').appendTo('.mob-nav');
 
   });
-
-
-    //* перенос блока nav при break-point 993px
-
-    $(window).on('load resize',
-    function () {
-      if ($(window).width() > 993) {
-        $('.nav').prependTo('.content');
-      }
-     /*  else {
-        $('.nav').prependTo('.content');
-      } */
-    });
 })
