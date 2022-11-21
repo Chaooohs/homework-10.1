@@ -14,16 +14,13 @@ $(document).ready(function () {
   });
 
 
-  //* перенос блока nav при break-point 993px
+  //* перенос блока nav при break-point 992px
 
   $(window).on('load resize',
     function () {
       if ($(window).width() > 992) {
         $('.nav').appendTo('.content');
       }
-      /* else {
-        $('.nav').prependTo('.content');
-      } */
     });
 
 
