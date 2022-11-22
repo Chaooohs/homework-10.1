@@ -44,6 +44,5 @@ $(document).ready(function () {
 
     //переносит меню nav последним в меню бургер
     $('.nav').appendTo('.mob-nav');
-
   });
 })
