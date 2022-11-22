@@ -19,7 +19,7 @@ $(document).ready(function () {
   $(window).on('load resize',
     function () {
       if ($(window).width() > 992) {
-        $('.nav').appendTo('.content');
+        $('.nav').prependTo('.content');
       }
     });
 
